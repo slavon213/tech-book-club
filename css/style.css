@@ -77,6 +77,19 @@ body {
 
     --font-main: "Martian Mono", sans-serif;
     --font-second: "Inter", sans-serif;
+
+    --color-neutral-900: rgb(6, 38, 48);
+    --color-neutral-700: rgb(56, 81, 89);
+    --color-neutral-200: rgb(230, 225, 223);
+    --color-neutral-100: rgb(250, 245, 243);
+    --color-neutral-0: rgb(255, 255, 255);
+
+    --color-light-salmon-500: rgb(254, 163, 111);
+    --color-light-salmon-100: rgb(255, 226, 209);
+    --color-light-salmon-50: rgb(255, 245, 239);
+
+    --color-gradient-text: linear-gradient(107deg, #ff9a60 -11.37%, #062630 61.84%);
+    --color-gradient: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
 }
 
 .text-preset-1 {
