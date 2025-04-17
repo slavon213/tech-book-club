@@ -1,3 +1,30 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/static/Inter_18pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/static/Inter_18pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Martian Mono";
+    src: url("tech-book-club/assets/fonts/martian-mono/static/MartianMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Martian Mono";
+    src: url("./assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Martian Mono";
+    src: url("./assets/fonts/martian-mono/static/MartianMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -12,16 +39,16 @@ img {
     height: auto;
 }
 
-
 ul {
     list-style: none;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
 }
 
-:root  {
+:root {
     --spacing-0: 0px;
     --spacing-025: 2px;
     --spacing-050: 4px;
@@ -48,5 +75,3 @@ html, body {
     --radius-24: 24px;
     --radius-full: 999px;
 }
-
-
