@@ -206,7 +206,6 @@ body {
 
         img {
             width: auto;
-            
         }
     }
 
@@ -241,10 +240,11 @@ body {
 
     section.join {
         background-color: var(--color-neutral-100);
-        background-image: url("../assets/images/pattern-light-bg.svg") ;
+        background-image: url("../assets/images/pattern-light-bg.svg");
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        z-index: 0;
 
         h2 {
             margin-block-end: var(--spacing-300);
@@ -253,13 +253,10 @@ body {
             background-clip: text;
             text-wrap: pretty;
             margin-inline-end: 10px;
-            
         }
 
         & > p {
             margin-block-end: var(--spacing-400);
-            /* text-align: left; */
-
         }
 
         a {
@@ -267,18 +264,25 @@ body {
         }
     }
 
-    /* section.join::after {
-        content: '';
+    section.join::before {
+        content: "";
+        position: absolute;
+        background-image: url("../assets/images/pattern-glow.svg");
+        width: 100%;
+        height: 100%;
+        bottom: -50%;
+        right: -50%;
+    }
+    section.join::after {
+        content: "";
         position: absolute;
         width: 100%;
-        height: 15%;
-        background: var(--color-neutral-100);
+        height: 25%;
         bottom: 0;
-        right: 0;
-        z-index: -0;
-
-
-    } */
+        left: 0;
+        background-color: var(--color-neutral-100);
+        z-index: -1;
+    }
 
     .stars {
         display: grid;
