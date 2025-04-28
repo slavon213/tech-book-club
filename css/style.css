@@ -266,6 +266,7 @@ body {
     
             & > p {
                 margin-block-end: var(--spacing-400);
+                text-wrap: pretty;
             }
     
             a {
@@ -298,6 +299,7 @@ body {
         display: grid;
         align-items: center;
         justify-content: start;
+        /* grid-template-columns: auto 1fr; */
         column-gap: var(--spacing-150);
         margin-block-end: var(--spacing-800);
 
@@ -323,13 +325,17 @@ body {
             }
         }
         p {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            /* color: var(--color-neutral-700); */
+            grid-column: 2;
+            grid-row: 2;
+            /* white-space: nowrap; */
+            word-break: break-word;
         }
     }
 
     section.together {
         padding-block-start: var(--spacing-800);
+        h2 {
+            color: var(--color-neutral-900);
+        }
     }
 }
