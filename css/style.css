@@ -253,21 +253,24 @@ body {
         position: relative;
         z-index: 0;
 
-        h2 {
-            margin-block-end: var(--spacing-300);
-            background-image: var(--color-gradient-text);
-            color: transparent;
-            background-clip: text;
-            text-wrap: pretty;
-            margin-inline-end: 10px;
-        }
+        div.section-content {
 
-        & > p {
-            margin-block-end: var(--spacing-400);
-        }
-
-        a {
-            margin-block-end: var(--spacing-250);
+            h2 {
+                margin-block-end: var(--spacing-300);
+                background-image: var(--color-gradient-text);
+                color: transparent;
+                background-clip: text;
+                text-wrap: pretty;
+                margin-inline-end: 10px;
+            }
+    
+            & > p {
+                margin-block-end: var(--spacing-400);
+            }
+    
+            a {
+                margin-block-end: var(--spacing-250);
+            }
         }
     }
 
@@ -308,7 +311,7 @@ body {
             grid-column: 2/3;
             grid-row: 1;
             display: flex;
-
+            
             li::before {
                 content: "";
                 display: inline-block;
