@@ -222,6 +222,11 @@ body {
         overflow: hidden;
     }
 
+    div.section-content{
+        display: flex;
+        flex-direction: column;
+    }
+
     a {
         text-transform: uppercase;
         text-align: center;
