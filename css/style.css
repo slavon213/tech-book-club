@@ -423,4 +423,8 @@ body {
             }
         }
     }
+
+    section.jorney {
+        display: none;
+    }
 }
