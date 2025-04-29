@@ -348,7 +348,7 @@ body {
         p {
             grid-column: 2;
             grid-row: 2;
-            text-wrap: ;
+            text-wrap: initial;
             /* white-space: nowrap; */
             /* word-break: break-word; */
         }
