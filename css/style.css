@@ -333,12 +333,13 @@ body {
             grid-column: 2/3;
             grid-row: 1;
             display: flex;
+            align-content: center;
 
             li::before {
                 content: "";
                 display: inline-block;
-                width: 20px;
-                height: 20px;
+                width: 24px;
+                height: 24px;
                 background: url("../assets/images/icon-star.svg");
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -347,8 +348,9 @@ body {
         p {
             grid-column: 2;
             grid-row: 2;
+            text-wrap: ;
             /* white-space: nowrap; */
-            word-break: break-word;
+            /* word-break: break-word; */
         }
     }
 
