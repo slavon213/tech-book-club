@@ -429,13 +429,13 @@ body {
                     position: relative;
                 }
 
-                span::before {
+                span::after {
                     content: "";
                     position: absolute;
                     background-image: url("../assets/images/pattern-circle.png");
-                    background-size: contain;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    width: 110px;
+                    width: 115px;
                     height: 48px;
                     left: -10px;
                 }
