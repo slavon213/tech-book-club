@@ -514,4 +514,24 @@ body {
             }
         }
     }
+
+    section.testimonials {
+        padding-block: var(--spacing-800);
+
+        div.section-content {
+             gap: var(--spacing-400);
+
+            .stars {
+                display: block;
+                margin-block-end: 0;
+            }
+
+            blockquote {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-400);
+                text-wrap: pretty;
+            }
+        }
+    }
 }
