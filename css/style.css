@@ -237,6 +237,7 @@ body {
     }
 
     a {
+        display: block;
         text-transform: uppercase;
         text-align: center;
         border-radius: var(--radius-8);
@@ -426,5 +427,42 @@ body {
 
     section.jorney {
         display: none;
+    }
+
+    section.options {
+        padding-block-start: var(--spacing-300);
+        /* justify-content: stretch; */
+
+        /* section.inner {
+        } */
+
+        div.section-content {
+            /* border: 1px solid red; */
+            gap: var(--spacing-300);
+
+            h2 {
+                margin-block-end: var(--spacing-300);
+            }
+
+            article {
+                padding: var(--spacing-300);
+                border: 1px solid var(--color-neutral-200);
+                border-radius: var(--radius-8);
+                background: var(--colors-neutral-0);
+            }
+
+            hr {
+                border: none;
+                border-bottom: 1px solid var(--color-neutral-200);
+
+            }
+
+            .member-options {
+                display: flex;
+                flex-direction: column;
+                gap: var(--spacing-300);
+
+            }
+        }
     }
 }
