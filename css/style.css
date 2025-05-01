@@ -546,7 +546,7 @@ body {
 
     footer {
         background-color: var(--color-neutral-900);
-        border-radius: var(--radius-16);
+        border-radius: var(--radius-16) var(--radius-16) 0 0;
 
         .section-content {
             color: var(--color-neutral-100);
