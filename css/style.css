@@ -279,16 +279,25 @@ body {
             }
 
             a {
-                display: flex;
+                display: inline-flex;
+                align-items: center;
                 justify-content: space-between;
                 align-items: center;
                 margin-block-end: var(--spacing-250);
-                span {
+                /* span {
                     display: inline-block;
-                }
-                img {
+                } */
+                /* img {
                     width: initial;
-                }
+                } */
+            }
+
+            a::after {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url("../assets/images/icon-arrow-down.svg");
             }
         }
     }
@@ -335,8 +344,8 @@ body {
             li::before {
                 content: "";
                 display: inline-block;
-                width: 24px;
-                height: 24px;
+                width: 28px;
+                height: 28px;
                 background: url("../assets/images/icon-star.svg");
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -519,7 +528,7 @@ body {
         padding-block: var(--spacing-800);
 
         div.section-content {
-             gap: var(--spacing-400);
+            gap: var(--spacing-400);
 
             .stars {
                 display: block;
@@ -531,6 +540,46 @@ body {
                 flex-direction: column;
                 gap: var(--spacing-400);
                 text-wrap: balance;
+            }
+        }
+    }
+
+    footer {
+        background-color: var(--color-neutral-900);
+        border-radius: var(--radius-16);
+
+        .section-content {
+            color: var(--color-neutral-100);
+
+            padding-block-start: var(--spacing-600);
+
+            h2 {
+                color: var(--color-neutral-100);
+                text-align: center;
+                margin-block-end: var(--spacing-500);
+            }
+            a {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-block-end: var(--spacing-300);
+                padding-inline: var(--spacing-300);
+                padding-block: var(--spacing-250);
+                color: var(--color-neutral-0);
+                background-color: transparent;
+                border: 2px solid var(--colors-neutral-0, #fff);
+            }
+
+            a::after {
+                content: "";
+                display: inline-block;
+                background-image: url("../assets/images/icon-arrow-up.svg");
+                width: 24px;
+                height: 24px;
+            }
+
+            p {
             }
         }
     }
