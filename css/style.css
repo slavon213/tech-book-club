@@ -1,27 +1,32 @@
 @font-face {
     font-family: "Inter";
-    src: url("../assets/fonts/inter/static/Inter_18pt-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/inter/static/Inter_18pt-Regular.ttf")
+        format("truetype");
     font-weight: 400;
 }
 @font-face {
     font-family: "Inter";
-    src: url("../assets/fonts/inter/static/Inter_18pt-SemiBold.ttf") format("truetype");
+    src: url("../assets/fonts/inter/static/Inter_18pt-SemiBold.ttf")
+        format("truetype");
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Martian Mono";
-    src: url("../assets/fonts/martian-mono/static/MartianMono-Regular.ttf") format("truetype");
+    src: url("../assets/fonts/martian-mono/static/MartianMono-Regular.ttf")
+        format("truetype");
     font-weight: 400;
 }
 @font-face {
     font-family: "Martian Mono";
-    src: url("../assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf") format("truetype");
+    src: url("../assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf")
+        format("truetype");
     font-weight: 600;
 }
 @font-face {
     font-family: "Martian Mono";
-    src: url("../assets/fonts/martian-mono/static/MartianMono-Bold.ttf") format("truetype");
+    src: url("../assets/fonts/martian-mono/static/MartianMono-Bold.ttf")
+        format("truetype");
     font-weight: 700;
 }
 
@@ -197,16 +202,7 @@ body {
     letter-spacing: -1px;
 }
 
-@media (min-width: 375px) {
-    /* .container {
-        min-width: 375px;
-    } */
 
-    /* main { */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: var(--spacing-800); */
-    /* } */
 
     div.section-inner {
         max-width: 375px;
@@ -215,8 +211,6 @@ body {
     section {
         display: flex;
         justify-content: center;
-        /* flex-direction: column; */
-        /* padding-block-start: var(--spacing-800); */
         padding-inline: var(--spacing-200);
         overflow: hidden;
     }
@@ -284,12 +278,6 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 margin-block-end: var(--spacing-250);
-                /* span {
-                    display: inline-block;
-                } */
-                /* img {
-                    width: initial;
-                } */
             }
 
             a::after {
@@ -370,33 +358,6 @@ body {
             h2 {
                 margin-block-end: var(--spacing-300);
             }
-
-            /* ul {
-                display: flex;
-                flex-direction: column;
-                gap: var(--spacing-200);
-                margin-block-end: var(--spacing-500);
-                color: var(--color-neutral-700);
-
-                li {
-                    padding-inline-start: 38px;
-                    position: relative;
-                }
-
-                li::before {
-                    content: "";
-                    display: inline-block;
-                    width: 24px;
-                    height: 24px;
-                    background: url("../assets/images/icon-check.svg");
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            } */
         }
     }
 
@@ -467,13 +428,9 @@ body {
 
     section.options {
         padding-block-start: var(--spacing-300);
-        /* justify-content: stretch; */
-
-        /* section.inner {
-        } */
+        
 
         div.section-content {
-            /* border: 1px solid red; */
             gap: var(--spacing-300);
 
             h2 {
@@ -597,7 +554,6 @@ body {
             a {
                 padding: 0;
                 background: transparent;
-            } 
+            }
         }
     }
-}
