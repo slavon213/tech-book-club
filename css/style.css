@@ -612,15 +612,24 @@ footer {
         }
 
         picture {
-        img {
-            border-radius: var(--radius-10);
+            img {
+                border-radius: var(--radius-10);
+                z-index: 10;
+            }
+
         }
-
+        &::before {
+            z-index: -1;
+            width: 684px;
+            height: 684px;
+            right: 0;
+            bottom: 0;
+        }
     }
-    }
 
-    section.together, section.club, section.options {
+    section.together,
+    section.club,
+    section.options {
         padding-block-start: var(--spacing-1000);
-
     }
 }
