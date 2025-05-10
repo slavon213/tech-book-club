@@ -633,10 +633,13 @@ footer {
         }
     }
 
+    section.join,
     section.together,
     section.club,
-    section.options {
-        padding-block-start: var(--spacing-1000);
+    section.jorney,
+    section.options,
+    section.testimonials {
+        margin-block-end: var(--spacing-1000);
     }
 
     section.options {
