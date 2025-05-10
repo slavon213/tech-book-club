@@ -402,7 +402,7 @@ section.club {
                 content: "";
                 position: absolute;
                 background-image: url("../assets/images/pattern-circle.png");
-                background-size: cover;
+                background-size: contain;
                 background-repeat: no-repeat;
                 width: 115px;
                 height: 48px;
@@ -501,7 +501,7 @@ section.testimonials {
             display: flex;
             flex-direction: column;
             gap: var(--spacing-400);
-            text-wrap: balance;
+            text-wrap: pretty;
         }
     }
 }
@@ -576,6 +576,11 @@ footer {
         letter-spacing: -2px;
     }
 
+    .text-preset-3 {
+        font-size: 34px;
+        line-height: 130%;
+    }
+
     .text-preset-6 {
         font-size: 18px;
     }
@@ -611,7 +616,6 @@ footer {
             display: none;
         }
 
-        
         picture {
             img {
                 border-radius: var(--radius-10);
@@ -627,22 +631,33 @@ footer {
         }
     }
 
-    section.join, footer {
+    section.club {
+        div.section-content {
+            h2 {
+                span::after {
+                    width: 159px;
+                    height: 68px;
+                }
+            }
+        }
+    }
+
+    section.join,
+    footer {
         .section-content {
             a {
                 min-width: initial;
                 width: 55%;
             }
         }
-
     }
 
-    .join,
-    .together,
-    .club,
-    .jorney,
-    .options,
-    .testimonials {
+    section.join,
+    section.together,
+    section.club,
+    section.jorney,
+    section.options,
+    section.testimonials {
         margin-block-end: var(--spacing-1000);
     }
 
@@ -658,6 +673,7 @@ footer {
         }
     }
 
+    
     footer {
         .section-content {
             align-items: center;
