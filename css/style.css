@@ -611,13 +611,7 @@ footer {
             display: none;
         }
 
-        .section-content {
-            a {
-                min-width: initial;
-                width: 55%;
-            }
-        }
-
+        
         picture {
             img {
                 border-radius: var(--radius-10);
@@ -633,12 +627,22 @@ footer {
         }
     }
 
-    section.join,
-    section.together,
-    section.club,
-    section.jorney,
-    section.options,
-    section.testimonials {
+    section.join, footer {
+        .section-content {
+            a {
+                min-width: initial;
+                width: 55%;
+            }
+        }
+
+    }
+
+    .join,
+    .together,
+    .club,
+    .jorney,
+    .options,
+    .testimonials {
         margin-block-end: var(--spacing-1000);
     }
 
@@ -651,6 +655,12 @@ footer {
             article {
                 flex-basis: calc(50% - var(--spacing-300) / 2);
             }
+        }
+    }
+
+    footer {
+        .section-content {
+            align-items: center;
         }
     }
 }
