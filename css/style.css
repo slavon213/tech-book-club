@@ -202,7 +202,7 @@ body {
     letter-spacing: -1px;
 }
 
-div.section-inner{
+div.section-inner {
     max-width: 375px;
 }
 
@@ -249,6 +249,7 @@ a {
 section.join {
     padding-block-start: var(--spacing-300);
     padding-block-end: var(--spacing-1000);
+    margin-block-end: var(--spacing-800);
     background-color: var(--color-neutral-100);
     background-image: url("../assets/images/pattern-light-bg.svg");
     position: relative;
@@ -351,7 +352,7 @@ section.join::after {
 }
 
 section.together {
-    padding-block-start: var(--spacing-800);
+    margin-block-end: var(--spacing-800);
 
     div.section-content {
         h2 {
@@ -388,8 +389,7 @@ ul.list-options {
 }
 
 section.club {
-    padding-block-start: var(--spacing-800);
-
+    margin-block-end: var(--spacing-300);
     div.section-content {
         h2 {
             margin-block-end: var(--spacing-300);
@@ -426,17 +426,14 @@ section.jorney {
 }
 
 section.options {
-    padding-block-start: var(--spacing-300);
-
+    margin-block-end: var(--spacing-800);
     .section-inner {
         width: 100%;
     }
-    
-
 
     div.section-content {
         gap: var(--spacing-300);
-        
+
         h2 {
             margin-block-end: var(--spacing-300);
         }
@@ -491,8 +488,7 @@ section.options {
 }
 
 section.testimonials {
-    padding-block: var(--spacing-800);
-
+    margin-block-end: var(--spacing-800);
     div.section-content {
         gap: var(--spacing-400);
 
@@ -646,7 +642,7 @@ footer {
     section.options {
         div.section-content {
             .cards {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             article {
