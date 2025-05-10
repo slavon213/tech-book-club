@@ -681,5 +681,10 @@ footer {
         .section-content {
             align-items: center;
         }
+
+        .copyright {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
