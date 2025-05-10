@@ -202,7 +202,7 @@ body {
     letter-spacing: -1px;
 }
 
-div.section-inner {
+div.section-inner{
     max-width: 375px;
 }
 
@@ -428,16 +428,22 @@ section.jorney {
 section.options {
     padding-block-start: var(--spacing-300);
 
+    .section-inner {
+        width: 100%;
+    }
+    
+
+
     div.section-content {
         gap: var(--spacing-300);
-
+        
         h2 {
             margin-block-end: var(--spacing-300);
         }
 
         .cards {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
             gap: var(--spacing-300);
         }
         article {
@@ -640,8 +646,7 @@ footer {
     section.options {
         div.section-content {
             .cards {
-                flex-direction: row;
-                flex-wrap: wrap;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
             article {
