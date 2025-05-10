@@ -211,6 +211,7 @@ div.section-inner {
 
 section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-inline: var(--spacing-200);
     overflow: hidden;
@@ -694,6 +695,21 @@ footer {
         .copyright {
             flex-direction: row;
             justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    div.section-inner {
+        max-width: 1280px;
+        width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row; */
+
+        .section-content,
+        picture {
+            flex: 1;
         }
     }
 }
