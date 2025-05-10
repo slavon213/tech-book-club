@@ -632,6 +632,20 @@ footer {
     }
 
     section.club {
+
+        .section-inner {
+            position: relative;
+
+            &::before {
+                content: '';
+                background: url("../assets/images/logos-tech.svg");
+                position: absolute;
+                width: 120px;
+                height: 138px;
+                right: 51px;
+                bottom: 51px;
+            }
+        }
         div.section-content {
             h2 {
                 span::after {
